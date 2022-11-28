@@ -1,8 +1,9 @@
 import { ThemeProvider } from 'styled-components';
 
 import { Dashboard } from './page/Dashboard';
-import { GlobalStyles } from './styles/GlobalStyles';
 import { theme } from './theme';
+
+import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
   return (
