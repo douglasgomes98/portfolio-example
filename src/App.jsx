@@ -1,12 +1,15 @@
+import { ThemeProvider } from 'styled-components';
+
+import { Dashboard } from './page/Dashboard';
 import { GlobalStyles } from './styles/GlobalStyles';
-import { fonts } from './theme/fonts';
+import { theme } from './theme';
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <h1 style={{ fontFamily: fonts.family.bold }}>Hello World</h1>
-    </>
+      <Dashboard />
+    </ThemeProvider>
   );
 }
 
