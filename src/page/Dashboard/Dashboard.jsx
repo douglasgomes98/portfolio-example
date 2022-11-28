@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { PageContainer } from '../../components/PageContainer';
 
@@ -9,6 +10,8 @@ export function Dashboard() {
       <PageContainer>
         <Header />
       </PageContainer>
+
+      <Footer />
     </Container>
   );
 }
